@@ -130,8 +130,8 @@ const images = [
     let clicksSinceLastChange = 0;
 
     // 초기 이미지 설정
-    let currentIndex = 0;
-    imgEl.src = images[currentIndex];
+	let currentIndex = Math.floor(Math.random() * images.length);
+	imgEl.src = images[currentIndex];
 
     // 화면 클릭/터치 이벤트
     document.body.addEventListener('pointerdown', (e) => {
